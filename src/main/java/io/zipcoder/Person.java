@@ -1,7 +1,8 @@
 package io.zipcoder;
 
 /**
- * Class named Person that will hold customers information for loan decision
+ * Class named Person that will hold customers basic
+ * information for loan decision.
  * Created by pcano on 10/16/15.
  */
 
@@ -11,7 +12,7 @@ public class Person {
     private String Address;
     private String lengthAtResidence;
     private double rent;
-    private int yearsEmployed;
+    private boolean isEmployed;
     private double salary;
     private double monthlyIncome;
     private String maritalStatus;
@@ -19,5 +20,59 @@ public class Person {
     private int FICO;
     private String collateral;
     private String capital;
-    
+
+
+    public void setEmployed(boolean a){
+        isEmployed = a;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return Address;
+    }
+
+    public String getLengthAtResidence() {
+        return lengthAtResidence;
+    }
+
+    public double getRent() {
+        return rent;
+    }
+
+    public boolean getIsEmployed() {
+        return isEmployed;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public double getMonthlyIncome() {
+        return monthlyIncome;
+    }
+
+    public String getMaritalStatus() {
+        return maritalStatus;
+    }
+
+    public double getDisposableIncome() {
+        return disposableIncome;
+    }
+
+    public int getFICO() {
+        return FICO;
+    }
+
+    public String getCollateral() {
+        return collateral;
+    }
+
+    public String getCapital() {
+        return capital;
+    }
+
+
 }
